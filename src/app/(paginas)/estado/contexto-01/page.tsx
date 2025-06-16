@@ -1,3 +1,4 @@
+"use client";
 import LadoDireito from "@/components/estado/contexto-01/LadoDireito";
 import LadoEsquerdo from "@/components/estado/contexto-01/LadoEsquerdo";
 import Titulo from "@/components/template/Titulo";
