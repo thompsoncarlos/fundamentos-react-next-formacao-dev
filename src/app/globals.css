@@ -1,8 +1,7 @@
 @import "tailwindcss";
-/* @custom-variant dark (&:where(.dark, .dark *)); */
 
 :root {
-  --background: #000000;
+  --background: #ffffff;
   --foreground: #171717;
 }
 
@@ -27,7 +26,7 @@ body {
 }
 
 .botao {
-  @apply flex justify-center item-center gap-2;
+  @apply flex justify-center items-center gap-2;
   @apply px-6 py-2.5 rounded-md;
 }
 
@@ -41,20 +40,36 @@ body {
   @apply text-white;
 }
 
+.botao.cinza {
+  @apply bg-zinc-500 hover:bg-zinc-600;
+  @apply text-white;
+}
+
+.botao.verde {
+  @apply bg-green-500 hover:bg-green-600;
+  @apply text-white;
+}
+
+.input {
+  @apply bg-zinc-900 px-4 py-2 rounded-md;
+  @apply border border-zinc-700;
+}
+
 .container {
   @apply flex flex-col justify-center items-center;
-  @apply h-screen;
+  /* @apply h-screen; */
 }
 
-.exemplo {
-  @apply bg-zinc-900 roudend-log;
+.exercicio {
+  @apply bg-zinc-900 rounded-lg;
+  @apply overflow-hidden;
 }
 
-.exemplo h1 {
+.exercicio h1 {
   @apply text-3xl font-black;
-  @apply px-10 p-7 bg-zinc-800;
+  @apply px-10 py-5 bg-zinc-800;
 }
 
-.exemplo div {
-  @apply flex flex-col p-5;
+.exercicio .conteudo {
+  @apply flex flex-col p-5 text-xl;
 }
